@@ -10,10 +10,24 @@
 
   --color-primary: oklch(97.06% 0.0049 64.59);
   --color-secondary: oklch(29.96% 0.0049 64.59);
-  --color-ruby: oklch(53.24% 0.2097 22.24);
+
+  --animate-text: text 30s ease-in-out infinite;
+  @keyframes text {
+    0% { color: var(--color-secondary); }
+    10% { color: bisque; }
+    20% { color: cornflowerblue; }
+    30% { color: darkolivegreen; }
+    40% { color: thistle; }
+    50% { color: steelblue; }
+    60% { color: sandybrown; }
+    70% { color: royalblue; }
+    80% { color: mistyrose; }
+    90% { color: lightcoral; }
+    100% { color: var(--color-secondary); }
+  }
 }
 
-:root {
+body {
   @apply transition-colors ease-in-out;
   @apply bg-primary text-secondary;
 }
