@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./typography.css";
+@import "./images.css";
+
+@theme {
+  --aspect-film: 3 / 2; 
+
+  --font-sans: 'Inter Variable', 'sans-serif';
+  --font-display: 'Jacquard 24', 'sans-serif';
+
+  --color-primary: oklch(97.06% 0.0049 64.59);
+  --color-secondary: oklch(29.96% 0.0049 64.59);
+  --color-ruby: oklch(53.24% 0.2097 22.24);
+}
+
+:root {
+  @apply transition-colors ease-in-out;
+  @apply bg-primary text-secondary;
+}
+
+.dark-mode {
+  --color-primary: oklch(29.96% 0.0049 64.59);
+  --color-secondary: oklch(97.06% 0.0049 64.59);
+}
+
