@@ -9,21 +9,14 @@
   --font-display: 'Jacquard 24', 'sans-serif';
 
   --color-primary: oklch(97.06% 0.0049 64.59);
-  --color-secondary: oklch(29.96% 0.0049 64.59);
+  --color-secondary: oklch(55.98% 0.1882 266.4);
 
-  --animate-text: text 30s ease-in-out infinite;
-  @keyframes text {
-    0% { color: var(--color-secondary); }
-    10% { color: bisque; }
-    20% { color: cornflowerblue; }
-    30% { color: darkolivegreen; }
-    40% { color: thistle; }
-    50% { color: steelblue; }
-    60% { color: sandybrown; }
-    70% { color: royalblue; }
-    80% { color: mistyrose; }
-    90% { color: lightcoral; }
-    100% { color: var(--color-secondary); }
+  --animate-skeleton: skeleton 3s ease-in-out infinite;
+
+  @keyframes skeleton{
+    0% { background: oklch(92.8% 0.006 264.531 / 25%); }
+    50% { background: oklch(92.8% 0.006 264.531 / 95%); }
+    100% { background: oklch(92.8% 0.006 264.531 / 25%); }
   }
 }
 

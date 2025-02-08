@@ -7,11 +7,11 @@ import birds from '../assets/birds.jpg';
 
 <Layout>
   <section class="container p-4 flex flex-col gap-4"> 
-    <div>
-      <h1 class="animate-text">Null Contact</h1>
+    <div class="flex justify-between relative">
+      <h1 class="">Null Contact</h1>
     </div>
 
-    <Image class="film" src={birds} alt="" />
-    <Image class="film" src={sign} alt="" />
+    <Image class="film" src={birds} alt="" priority={true} layout='responsive' width={752} height={499}/>
+    <Image class="film" src={sign} alt="" priority={true} layout='responsive' width={752} height={499}/>
   </section>
 </Layout>
